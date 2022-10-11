@@ -1,0 +1,71 @@
+.logo {
+    height: 40px;
+    width: 119px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+}
+
+.btn-s {
+    border-radius: 23px;
+}
+
+.header-text {
+    color: #848975;
+    -webkit-text-stroke: 1px white;
+    font-weight: bolder;
+}
+
+.title-1 {
+    height: 134px;
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+}
+
+.btn-s2:hover {
+    border-color: white !important;
+}
+
+.bg-name {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.3),rgba(0,0,0,.7));
+    opacity: 0;
+    transition: .5s;
+}
+
+.pet-artwork {
+    &:hover .bg-name, .pet-info{
+        opacity: 1;
+        transition: .5s;
+    }
+}
+
+.pet-info {
+    top: 70%;
+    left: 10%;
+    opacity: 0;
+}
+
+.adopt-link:hover {
+    color: $primary !important;
+}
+
+.pet-doodle{
+    opacity: 1;
+    transition: .5s;
+}
+
+.adopt-hover:hover{
+    box-shadow :0 .5rem 1rem rgba($black, .3) !important;
+
+    &>.card-header>.pet-doodle{
+        opacity: 0;
+        transition: .5s;
+    }
+}
