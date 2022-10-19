@@ -79,3 +79,89 @@
         transition: .5s;
     }
 }
+
+// designer
+$sidebar-width: 280px;
+
+
+.sidebar{
+    width: $sidebar-width;
+}
+
+.main{
+    width: calc(100vw - #{$sidebar-width});
+}
+
+.designer-name{
+
+    &.active{
+        &>a{
+            color: $primary !important;
+        }
+    }
+
+    &>span{
+        opacity: 0;
+        transition: .5s;
+    }
+}
+
+
+
+@include media-breakpoint-up(md) {
+    .designer-name{
+
+        &.active{
+            &>span{
+                opacity: 1;
+            }
+        
+            &>a{
+                color: $primary !important;
+                margin-left: 20px;
+            }
+        }
+    
+        &>span{
+            opacity: 0;
+            transition: .5s;
+            color: $primary;
+        }
+    
+        &>a{
+            transition: margin-left .5s;
+        }
+    }
+
+    .designer-name:hover{
+        &>span{
+            opacity: 1;
+            transition: .5s;
+        }
+    
+        &>a{
+            color: $primary !important;
+            margin-left: 20px;
+            translate: margin-left .5s;
+        }
+    }
+}
+
+.pet-artwork-designer>div>img{
+    width: 100%;
+}
+
+.pet-artwork-designer:hover{
+    >div>img{
+        width: 150%;
+        transition: width .5s;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .pet-artwork-designer:hover{
+        >div>img{
+            width: 100%;
+        }
+    }
+}

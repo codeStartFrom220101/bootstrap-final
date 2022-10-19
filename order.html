@@ -45,75 +45,92 @@
         </div>
       </div>
     </nav>
+    
+    <div style="background-image: url('./image/lightpaperfibers@2x.png');">
+      <header>
+        <img src="./image/banner.png" class="d-none d-md-block w-100" alt="banner">
+        <img src="./image/banner_service-sm@2x.png" class="w-100 d-md-none" alt="banner">
+      </header>
 
-    <section style="background-image: url('./image/lightpaperfibers@2x.png');">
-      <h2 class="text-center title-1 mx-auto" style="background-image: url('./image/title01.png');">近期作品</h2>
-      <div class="row">
-        <div class="col-12 col-md-3 font-kalam p-5">
-          <h3 class="text-center text-md-start">Designer</h3>
-          <ul class="list-unstyled d-flex justify-content-around container d-md-block p-0 mb-0">
-            <li class="py-3 designer-name active mx-1 d-flex"><span>-</span><a class="text-decoration-none text-dark d-block" href="#">All</a></li>
-            <li class="py-3 designer-name mx-1 d-flex"><span>-</span><a class="text-decoration-none text-dark d-block" href="#">Meili</a></li>
-            <li class="py-3 designer-name mx-1 d-flex"><span>-</span><a class="text-decoration-none text-dark d-block" href="#">Zoe</a></li>
-            <li class="py-3 designer-name mx-1 d-flex"><span>-</span><a class="text-decoration-none text-dark d-block" href="#">Micheal</a></li>
-            <li class="py-3 designer-name mx-1 d-flex"><span>-</span><a class="text-decoration-none text-dark d-block" href="#">Birdy</a></li>
-          </ul>
-        </div>
-        <div class="col-12 col-md-9">
-          <div class="container">
-            <div class="row g-4 row-cols-md-3 row-cols-2 mb-5">
-              <div class="col pet-artwork pet-artwork-designer">
-                <div class="position-relative">
-                  <div class="bg-name rounded-5">
-                    <p class="position-absolute text-white font-kalam pet-info">
-                      Name <br>
-                      Yumi
-                    </p>
+      <section class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form action="" class="shadow border-top border-5 border-primary rounded-3 bg-white p-5">
+              <h2 class="h5 text-center fw-bold">填寫訂單資料</h2>
+              <div class="row g-3 p-3">
+                <div class="col-md-6">
+                  <label for="last-name" class="form-label">名字</label>
+                  <input type="text" class="form-control" id="last-name">
+                </div>
+                <div class="col-md-6">
+                  <label for="first-name" class="form-label">姓氏</label>
+                  <input type="text" class="form-control" id="first-name">
+                </div>
+                <div class="col-12">
+                  <label for="phone-num" class="form-label">手機號碼</label>
+                  <input type="tel" class="form-control" id="phone-num">
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label">電子郵件</label>
+                  <input type="mail" class="form-control" id="email">
+                </div>
+                <p style="margin-bottom: -5px">收件地址</p>
+                <div class="col-md-6">
+                  <select name="city" id="city" class="form-select">
+                    <option value="">請選擇縣市</option>
+                    <option value=""></option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <select name="district" id="district" class="form-select">
+                    <option value="">請選擇市區</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" id="location">
+                </div>
+                <div class="col-12">
+                  <label for="designer-selected" class="form-label">選擇設計師風格</label>
+                  <select name="" id="designer-selected" class="form-select">
+                    <option value="">Meili</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="payment" class="form-label">付款方式</label>
+                  <select name="" id="payment" class="form-select">
+                    <option value=""></option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <p class="mb-1">加購服務</p>
+                  <div class="d-flex">
+                    <div class="form-check me-2">
+                      <input type="checkbox" id="checkbox-1" class="form-check-input">
+                      <label for="checkbox-1">送禮用包裝 +100</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" id="checkbox-2" class="form-check-input">
+                      <label for="checkbox-2">無框畫 +50</label>
+                    </div>
                   </div>
-                  <img src="./image/dog05@2x.png" class="rounded-5" alt="pet-artwork">
+                </div>
+                <div class="col-12">
+                  <label for="textarea" class="form-label">備註說明</label>
+                  <textarea class="form-control" id="textarea" cols="30" rows="5" style="resize: none;"></textarea>
+                </div>
+                <div class="col-12 h3 fw-bold text-center mt-4">
+                  總金額 NT$300
                 </div>
               </div>
-              <div class="col pet-artwork pet-artwork-designer">
-                <div class="position-relative">
-                  <div class="bg-name rounded-5">
-                    <p class="position-absolute text-white font-kalam pet-info">
-                      Name <br>
-                      Yumi
-                    </p>
-                  </div>
-                  <img src="./image/dog07@2x.png" class="rounded-5" alt="pet-artwork">
-                </div>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary rounded-pill px-5">送出訂購資訊</button>
               </div>
-              <div class="col pet-artwork pet-artwork-designer">
-                <div class="position-relative">
-                  <div class="bg-name rounded-5">
-                    <p class="position-absolute text-white font-kalam pet-info">
-                      Name <br>
-                      Yumi
-                    </p>
-                  </div>
-                  <img src="./image/dog06@2x.png" class="rounded-5" alt="pet-artwork">
-                </div>
-              </div>
-              <div class="col pet-artwork pet-artwork-designer">
-                <div class="position-relative">
-                  <div class="bg-name rounded-5">
-                    <p class="position-absolute text-white font-kalam pet-info">
-                      Name <br>
-                      Yumi
-                    </p>
-                  </div>
-                  <img src="./image/Michael.png" class="rounded-5" alt="pet-artwork">
-                </div>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
+      </section>
 
-      </div>
-    </section>
-
-
+    </div>
 
     <footer class="border-top border-primary border-3">
       <div class="container py-3">
