@@ -13291,6 +13291,13 @@ fieldset:disabled .btn {
   transition: .5s;
 }
 
+.btn-fixed:hover > button {
+  background: #000;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .btn-fixed:hover > .btn-fixed-1 {
   opacity: 0;
   -webkit-transition: .5s;

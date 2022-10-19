@@ -74,6 +74,12 @@
 }
 
 .btn-fixed:hover{
+    >button{
+        background: #000;
+        color: white;
+        transition: .5s;
+    }
+
     >.btn-fixed-1{
         opacity: 0;
         transition: .5s;
